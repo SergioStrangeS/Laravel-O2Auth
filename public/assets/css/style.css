@@ -1,0 +1,185 @@
+@font-face {
+    font-family: 'Neucha';
+    src: url('../fonts/Neucha-Regular.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.justify-beetween {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.btn {
+    padding: 12px 24px;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-watch {
+    font-size: 18px;
+    font-family: inherit;
+    font-weight: bold;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: #152a40;
+    background-color: #ecb2b7;
+}
+
+.btn-watch:hover {
+    background-color: #ffbfc4;
+}
+
+header {
+    min-height: 100vh;
+    /* background: url('https://catherineasquithgallery.com/uploads/posts/2021-02/1613295221_211-p-sinii-fon-dlya-istorii-v-instagram-257.png'); */
+    background: url('../images/3.jpg');
+    background-size: cover;
+    background-color: #152a40;
+    color: #fff;
+    font-family: 'Neucha';
+    padding-top: 2em;
+    position: relative;
+}
+
+header ul{
+    list-style: none;
+}
+
+header li {
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 2.3em;
+}
+
+header li:first-child {
+    margin-left: 0;
+}
+
+header nav li {
+    transition: .5s;
+}
+
+header nav li:hover {
+    color: #ecb2b7;
+    border-bottom: 1px solid #fff;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo .jap {
+    border-bottom: 1px solid #ffffff78;
+}
+
+.infocard {
+    max-width: 600px;
+    min-height: 300px;
+    max-height: 600px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.infocard>h1 {
+    letter-spacing: .1em;
+    font-size: 58px;
+    text-transform: uppercase;
+}
+
+.infocard>p {
+    line-height: 1.5em;
+    font-size: 20px;
+    color: #ecb2b7;
+}
+
+.infocard>.btn {
+    position: absolute;
+    margin-top: 5%;
+    right: 0;
+}
+
+.infocard-image {
+    height: 80%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.navlinks {
+    position: absolute;
+    bottom: 2em;
+}
+
+.navlinks a {
+    width: 32px;
+    margin-left: 1.1em;
+}
+
+.navlinks a:first-child {
+    margin-left: 0;
+}
+
+.navlinks img {
+    width: inherit;
+}
+
+@media screen and (min-width: 1440px) {
+    .container {
+        width: 1440px;
+        margin: 0 auto;
+    }
+
+    header ul{
+        margin-right: 16em;
+    }
+
+    header nav li {
+        display: inline-block;
+    }
+}
+
+@media (min-width:720px) and (max-width: 1440px) {
+    .container {
+        width: 720px;
+        margin: 0 auto;
+    }
+
+    header {
+        padding: 1em;
+    }
+
+    header nav li {
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .infocard-image {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    
+}

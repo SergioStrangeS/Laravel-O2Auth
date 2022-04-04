@@ -21,6 +21,9 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'w2me_id',
+        'w2me_token',
+        'w2me_refresh_token'
     ];
 
     /**
